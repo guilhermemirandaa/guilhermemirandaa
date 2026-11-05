@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="148" height="44" viewBox="0 0 148 44" role="img" aria-label="Portfolio">
+  <defs>
+    <clipPath id="pill"><rect width="148" height="44" rx="22"/></clipPath>
+    <linearGradient id="shine" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0"/>
+      <stop offset=".5" stop-color="#FFFFFF" stop-opacity=".45"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <style>
+    .shine { animation: sweep 5s ease-in-out 3.0s infinite; transform: translateX(-80px) skewX(-20deg); }
+    @keyframes sweep {
+      0% { transform: translateX(-80px) skewX(-20deg); }
+      12%, 100% { transform: translateX(188px) skewX(-20deg); }
+    }
+    .icon { animation: float 3s ease-in-out 0s infinite; }
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-2.5px); }
+    }
+  </style>
+  <g clip-path="url(#pill)">
+    <rect width="148" height="44" fill="#FACC15"/>
+    <rect class="shine" x="0" y="-10" width="46" height="64" fill="url(#shine)"/>
+  </g>
+  <g class="icon">
+    <text x="22" y="29" font-size="20" font-family="'Segoe UI Emoji','Apple Color Emoji','Noto Color Emoji',sans-serif">💻</text>
+  </g>
+  <text x="54" y="27.5" fill="#0A0A0A" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="15" font-weight="700">Portfolio</text>
+</svg>
